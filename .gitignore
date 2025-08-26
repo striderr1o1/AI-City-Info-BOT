@@ -1,0 +1,5 @@
+functionCallLLM.py
+info.txt
+tts-stt.py
+.env
+__pycache__/
