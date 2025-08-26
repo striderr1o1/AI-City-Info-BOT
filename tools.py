@@ -117,5 +117,5 @@ def CallLLM(query, tools=tools):
 
 #limitations: can only call one tool at a time
 #references: 
-#https://medium.com/@manojkotary/exploring-function-calling-capabilities-with-groq-a-step-by-step-guide-586ab7a165aa
+#   
 #ChatGpt
