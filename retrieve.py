@@ -29,7 +29,8 @@ def retrieveContext(query):
 def GetWeatherFromWeb(City):
     tavily_client = TavilyClient(api_key=os.environ.get('TAVILY_API_KEY'))
     response = tavily_client.search(f"Search the current weather in city: {City}")
-    return response["results"]
+    answer = response['results']
+    return answer
 
 tools = [
     {
@@ -111,7 +112,10 @@ def CallLLM(query, tools=tools):
         ]
     )
     answer2 = response2.choices[0].message.content
-    return answer2
+    return answer2 + " \nNote: Weather info may not be exactly accurate as it is based on ai web search and analysis."
 
 
 #limitations: can only call one tool at a time
+#references: 
+#https://medium.com/@manojkotary/exploring-function-calling-capabilities-with-groq-a-step-by-step-guide-586ab7a165aa
+#ChatGpt
