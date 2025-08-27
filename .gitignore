@@ -1,5 +1,5 @@
 functionCallLLM.py
 info.txt
-tts-stt.py
 .env
 __pycache__/
+input.wav
