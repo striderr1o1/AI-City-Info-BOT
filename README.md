@@ -21,7 +21,15 @@ Limitation:
    ```bash
    pip install -r requirements.txt
    ```
-3. Run the main application:
+3. create .env file and enter api keys. Also install Ollama embedding model prior to running app:
+   ```
+GROQ_API_KEY=""
+OLLAMA_EMBEDDING_MODEL="mxbai-embed-large:latest"
+CHAT_GROQ_MODEL="llama-3.3-70b-versatile"
+ELEVEN_LAB_APIKEY = ""
+TAVILY_API_KEY="tvly-dev-"
+   ```
+4. Run the main application:
    ```bash
    uvicorn main:app --reload
    ```
