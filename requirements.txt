@@ -16,4 +16,3 @@ fastapi
 multipart
 wordninja
 tavily-python
-streamlit-audiorec
