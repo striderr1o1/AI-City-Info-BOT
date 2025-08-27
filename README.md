@@ -1,6 +1,6 @@
 # AI-City-Information-Bot
 
-A project for Generative Ai course. A document containing basic information about Islamabad is stored in chromaDB.Querying the LLM can perform RAG tool over chromaDB or search weather using tavily search tool.
+A project for Generative Ai course. A document containing basic information about Islamabad is stored in chromaDB.Querying the LLM can perform RAG tool over chromaDB or search weather using tavily search.
 
 ## Project Structure
 - `main.py`: Main fastapi entry point for the application.
