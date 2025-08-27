@@ -79,7 +79,7 @@ def CallLLM(query, tools=tools):
     response1 = client.chat.completions.create(
     model=MODEL_NAME,  # or llama3-8b, mixtral, etc.
     messages=[
-        {"role": "system", "content": "Only call the weather tool if the user explicitly asks for weather information. If the word 'weather' is mentioned only then. Otherwise, call the retrieveContext tool. You can also call both."},
+        {"role": "system", "content": "Only call the weather tool if the user explicitly asks for weather information. If the word 'weather' is mentioned only then. Otherwise, call the retrieveContext tool. When calling retrieveContext tool, pass the whole user query AS IT IS to the tool,"},
         {"role": "user", "content": f"{query}"}
     ],
     tools=tools,
