@@ -1,6 +1,6 @@
 # AI-City-Information-Bot
 
-A project for Generative Ai course. Consists of LLM tool-calling for RAG and weather Search.
+A project for Generative Ai course. Consists of LLM tool-calling for RAG and weather Search. Currently under Development.
 
 ## Project Structure
 - `main.py`: Main fastapi entry point for the application.
@@ -30,7 +30,7 @@ Limitation:
 ## Features
 - Retrieval-Augmented Generation (RAG)
 - LLM integration and Multi-tool calling
-- voice text-to-speech and speech-to-text
+- voice text-to-speech and speech-to-text (expected)
 
 ## License
 MIT
